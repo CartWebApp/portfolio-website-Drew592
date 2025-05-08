@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
-    <article id="welcome"></article>
+    <article class="welcome"></article>
+    <a href="aboutme.html">Go to About Page</a>
+    
+    <script>
+        function transitionToNextPage() {
+          document.body.classList.add('whiteout');
+    
+          // Wait a bit for the white screen to be visible
+          setTimeout(() => {
+            window.location.href = 'nextpage.html'; // Change to your actual page
+          }, 500); // Delay in milliseconds
+        }
+      </script>
+
 </body>
 </html>
